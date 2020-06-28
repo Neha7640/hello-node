@@ -12,7 +12,7 @@ module.exports = (db) => {
     // execute the insert statment
     db.query(sql,Date.now(),(err, result, fields) => {
       if (err) res.status(500).json({message:err})
-      else res.status(200).json({ message: `Hello Welcome! ${result.insertId}`});
+      else res.status(200).json({ message: `Hello && Welcome! ${result.insertId}`});
     })
 
   });
