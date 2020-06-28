@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: sandeepyadavhellonode 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sandeepyadavhellonode 
+    spec:
+      containers:
+        - name: sandeepyadavhellonode 
+          image: first001.azurecr.io/sandeepyadavhellonode
+          ports:
+          - containerPort: 80
